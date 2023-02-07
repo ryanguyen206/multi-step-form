@@ -3,13 +3,9 @@
     justify-content:space-around;
     height:30%;
 
-    
-   
 }
 
-
 .subcription_panel {
-
     min-height:100%;
     flex-basis:28%;
     border:2px solid hsl(231, 11%, 63%);
@@ -18,6 +14,8 @@
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    transition: all .2s ease-in-out;
+    cursor:pointer;
 }
 
 .subcription_panel img {
@@ -25,7 +23,58 @@
     width:30px;
 }
 
+.subcription_panel:hover {
+   border:2px solid #dedcff;
+   transform: scale(1.1);
+}
+
 .grey-price {
     color:var(--silver);
     font-weight:500;
+}
+
+.prev_button_1 {
+    color:var(--silver);
+}
+
+.prev_button_1:hover {
+    cursor:pointer;
+    font-weight:700;
+}
+
+.double_button {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:4em;
+    padding:1.3em;
+
+}
+
+#next_2 { 
+    margin-right:0.3em;
+    width:20%;
+    padding:0.6em 1em;
+    border-radius:0.2em;
+    background-color:#164b8a;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+#prev_2 {
+    
+    color:var(--silver);
+    font-weight:500;
+    cursor:pointer;
+}
+
+#prev_2:hover{
+    font-weight:700;
+}
+
+.panel_chosen {
+    background-color:#f8f9fe;
+    border:2px solid #dedcff;
+
 }
