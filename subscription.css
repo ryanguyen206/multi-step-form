@@ -1,0 +1,31 @@
+#subscription {
+    display:flex;
+    justify-content:space-around;
+    height:30%;
+
+    
+   
+}
+
+
+.subcription_panel {
+
+    min-height:100%;
+    flex-basis:28%;
+    border:2px solid hsl(231, 11%, 63%);
+    border-radius:9px;
+    padding:1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.subcription_panel img {
+    height:30px;
+    width:30px;
+}
+
+.grey-price {
+    color:var(--silver);
+    font-weight:500;
+}

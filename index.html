@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="subscription.css">
+  <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+
+<body>
+
+  <div class="outer-container">
+    <div class="left-side">
+      <img src="bg-sidebar-desktop.svg" alt="">
+      <div class="step step1">
+        <p class="step-circle">1</p>
+        <div class="step-right">
+          <p class="step-number">Step 1</p>
+          <p class="step-description">Your info</p>
+        </div>
+      </div>
+      <div class="step step2">
+        <p class="step-circle">2</p>
+        <div class="step-right">
+          <p class="step-number">Step 2</p>
+          <p class="step-description">Select plan</p>
+        </div>
+      </div>
+      <div class="step step3">
+        <p class="step-circle">3</p>
+        <div class="step-right">
+          <p class="step-number">Step 3</p>
+          <p class="step-description">Add-ons</p>
+        </div>
+      </div>
+      <div class="step step4">
+        <p class="step-circle">4</p>
+        <div class="step-right">
+          <p class="step-number">Step 4</p>
+          <p class="step-description">Summary</p>
+        </div>
+      </div>
+    </div> 
+    <div class="right-side">
+      <h1 class="header">Personal Info</h1>
+      <p class="subheader">Please provide your name, email address, and phone number.</p>
+      <form id="form1">
+        <label class="color_label" for="name">Name</label>
+        <input type="text" name="name" id="name" required placeholder="eg: Joe Blow">
+        <label class="color_label" for="email" >Email Address</label>
+        <input type="text" name="email" id="email" required placeholder="eg: joeblow@gmail.com">
+        <label class="color_label" for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone" placeholder="eg: (1)666-1301-3203" required>
+      </form>
+      <button class="next_button" id="btn_1">Next Step</button>
+    </div>
+  </div>
+
+  <!--Step 2 form-->
+
+  <div class="outer-container">
+    <div class="left-side">
+      <img src="bg-sidebar-desktop.svg" alt="">
+      <div class="step step1">
+        <p class="step-circle">1</p>
+        <div class="step-right">
+          <p class="step-number">Step 1</p>
+          <p class="step-description">Your info</p>
+        </div>
+      </div>
+      <div class="step step2">
+        <p class="step-circle">2</p>
+        <div class="step-right">
+          <p class="step-number">Step 2</p>
+          <p class="step-description">Select plan</p>
+        </div>
+      </div>
+      <div class="step step3">
+        <p class="step-circle">3</p>
+        <div class="step-right">
+          <p class="step-number">Step 3</p>
+          <p class="step-description">Add-ons</p>
+        </div>
+      </div>
+      <div class="step step4">
+        <p class="step-circle">4</p>
+        <div class="step-right">
+          <p class="step-number">Step 4</p>
+          <p class="step-description">Summary</p>
+        </div>
+      </div>
+    </div> 
+    <div class="right-side">
+      <h1 class="header">Select your plan</h1>
+      <p class="subheader">You have the option of monthly or yearly billing.</p>
+
+      <div id="subscription">
+        <div class="subcription_panel">
+          <img src="icon-arcade.svg" alt="">
+          <div>
+            <p class="darkblue">Arcade</p>
+            <p class="grey-price">$9/mo</p>
+          </div>
+        </div>
+        <div class="subcription_panel">
+          <img  src="icon-pro.svg" alt="">
+          <div>
+            <p class="darkblue">Pro</p>
+            <p class="grey-price">$20/mo</p>
+          </div>
+        </div>
+        <div class="subcription_panel">
+          <img src="icon-advanced.svg" alt="">
+          <div>
+            <p class="darkblue">Advanced</p>
+            <p class="grey-price">$35/mo</p>
+          </div>
+        </div>
+      </div>
+      <button class="prev_button">Go Back</button>
+      <button class="next_button">Next Step</button>
+    </div>
+  </div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

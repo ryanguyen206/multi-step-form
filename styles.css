@@ -1,0 +1,156 @@
+body {
+    background-color:#eef5ff;
+    padding:20px;
+    height:100vh;
+  
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --darkblue:hsl(213, 96%, 18%);
+    --silver:hsl(231, 11%, 63%);
+}
+
+
+.outer-container {
+    display:none;
+    background-color:white;
+    /* display:flex; */
+    max-width:1000px;
+    margin: 0 auto;
+    border-radius:15px;
+}
+
+.left-side {
+    width:30%;
+    padding:1em;
+    position:relative;
+ 
+}
+
+.step {
+    width:50%;
+   z-index:50;
+   position:absolute;
+   top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    display:flex;  
+    justify-content:space-around;
+    align-items:center; 
+}
+
+.step2 {
+    top:26%;
+}
+
+.step3 {
+    top:39%;
+}
+
+.step4 {
+    top:52%;
+}
+
+.step-right {
+    display:flex;
+    flex-direction:column; 
+    width:70%;
+  
+}
+
+.step-circle {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background-color:hsl(228, 100%, 84%);
+}
+
+.step-number, .step-description {
+    text-transform: uppercase;
+}
+
+.step-number {
+    color:hsl(231, 11%, 63%);
+}
+
+.step-description  {
+    color:white;
+    letter-spacing:2px;
+    font-size:13px;
+}
+
+.right-side {
+    width: 50%;
+    margin-left:5em; 
+}
+
+#form1 {
+    display:flex;
+    flex-direction:column;
+}
+
+.header{
+    margin-top:3.5rem;
+    margin-bottom:1rem;
+    color:hsl(213, 96%, 18%);
+    font-weight:700;
+}
+
+.subheader{
+    margin-bottom:2rem;
+    color:hsl(231, 11%, 63%);
+}
+
+.color_label {
+    color:hsl(213, 96%, 18%);
+    font-weight:400;
+    margin-bottom:0.4em;
+}
+
+input[type=text] {
+    padding:.5em;
+    border-radius:0.3em;
+    margin-bottom:1.7em;
+}
+
+input[type=text]:focus {
+    outline: none !important;
+    border:3px solid hsl(244,94%,94%);
+}
+
+.next_button {
+    margin-top:4em;
+    width:20%;
+    margin-left: auto; 
+    margin-right: 0;
+    padding:0.6em 1em;
+    border-radius:0.2em;
+    background-color:#164b8a;
+    border:none;
+    color:white;
+    cursor:pointer;
+    float:right;
+    margin-right:15px;
+}
+
+
+.darkblue {
+    color:var(--darkblue);
+    font-weight:700;
+}
+
+
+
+
+
