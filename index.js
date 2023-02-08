@@ -50,11 +50,8 @@ const showForm = (n) => {
 
 const determineForm = (n) => {
     let x = document.getElementsByClassName("outer-container");
-  
     x[currentForm].style.display = "none";
-
     currentForm = currentForm + n;
-  
     showForm(currentForm);
 }
 
