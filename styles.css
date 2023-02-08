@@ -63,6 +63,7 @@ body {
     display:flex;
     flex-direction:column; 
     width:70%;
+
   
 }
 
@@ -93,6 +94,7 @@ body {
 .right-side {
     width: 50%;
     margin-left:5em; 
+    position:relative;
 }
 
 #form1 {
@@ -132,13 +134,20 @@ input[type=text]:focus {
 .next_button {
     margin-top:4em;
     width:20%;
-    float:right;
     padding:0.6em 1em;
     border-radius:0.2em;
     background-color:#164b8a;
     border:none;
     color:white;
     cursor:pointer;
+    position:absolute;
+    bottom:50px;
+    right:0;
+}
+
+.prev_button {
+    position:absolute;
+    bottom:60px;
 }
 
 
@@ -147,7 +156,9 @@ input[type=text]:focus {
     font-weight:700;
 }
 
-
-
+.global-silver-color {
+    color:var(--silver);
+    font-weight:500;
+}
 
 

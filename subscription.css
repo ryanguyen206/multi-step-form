@@ -28,18 +28,12 @@
    transform: scale(1.1);
 }
 
-.grey-price {
-    color:var(--silver);
-    font-weight:500;
-}
-
 .prev_button_1 {
     color:var(--silver);
 }
 
 .prev_button_1:hover {
     cursor:pointer;
-    font-weight:700;
 }
 
 .double_button {
@@ -70,7 +64,7 @@
 }
 
 #prev_2:hover{
-    font-weight:700;
+    font-weight:600;
 }
 
 .panel_chosen {

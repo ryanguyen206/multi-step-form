@@ -2,7 +2,21 @@ let currentForm = 0;
 let btn1 = document.getElementById('btn_1');
 let sub = document.getElementsByClassName("subcription_panel");
 
-btn1.addEventListener('click', () => determineForm(currentForm));
+let prev2 = document.getElementById('prev_2');
+
+let next_buttons = document.getElementsByClassName("next_button");
+let prev_buttons = document.getElementsByClassName("prev_button");
+
+Array.from(next_buttons).forEach((button, i) => {
+    button.addEventListener('click', () => determineForm(1))
+})
+
+
+Array.from(prev_buttons).forEach((button, i) => {
+    button.addEventListener('click', () => determineForm(-1))
+})
+
+
 
 Array.from(sub).forEach((panel, i) => {
     panel.addEventListener('click', () => toggleChoice(panel))
@@ -38,8 +52,9 @@ const determineForm = (n) => {
     let x = document.getElementsByClassName("outer-container");
   
     x[currentForm].style.display = "none";
-    currentForm++;
 
+    currentForm = currentForm + n;
+  
     showForm(currentForm);
 }
 
