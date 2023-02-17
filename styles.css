@@ -3,6 +3,7 @@ body {
     padding:20px;
     height:100vh;
   
+  
 }
 
 * {
@@ -92,9 +93,12 @@ body {
 }
 
 .right-side {
-    width: 50%;
-    margin-left:5em; 
+    width: 60%;
+    padding-left:5em; 
     position:relative;
+
+    
+   
 }
 
 #form1 {
@@ -162,3 +166,15 @@ input[type=text]:focus {
 }
 
 
+#thank-you {
+    display:Flex;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.align-center {
+    text-align:center;
+    font-size:1.2rem;
+}
